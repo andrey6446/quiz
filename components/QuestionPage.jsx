@@ -7,16 +7,16 @@ function QuestionPage({
   return (
     <Layout title={title}>
       <h1>{name}</h1>
-      <img src={quize.image} alt="Image for quize" />
+      <img src={quize.image} alt="For quize" />
       <p>{quize.question}</p>
-      <form action="#" method="POST" className="formAnswer">
+      <form action={`/api/themes/${themeId}/questions/${+questionId}`} method="POST" className="formAnswer">
         <input type="text" name="answer" />
-        <button>Ответить</button>
+        <button type="submit">Ответить</button>
         { +questionId === length
-          ? <button><a href={`/themes/`}>Go home!!!!</a></button>
-          : <button><a href={`/themes/${themeId}/questions/${+questionId + 1}`}>Next</a></button>
-        }
+          ? <button><a href="/themes/">Go home!!!!</a></button>
+          : <button><a href={`/themes/${themeId}/questions/${+questionId + 1}`}>Next</a></button>}
       </form>
+
     </Layout>
   );
 }

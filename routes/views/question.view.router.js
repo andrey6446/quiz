@@ -8,7 +8,7 @@ router.get('/:themeId/questions/:questionId', async (req, res) => {
 
     const theme = await Theme.findOne({ where: { id: themeId }, include: Quiz });
     const { name, Quizzes } = theme;
-    const length = Quizzes.length;
+    const { length } = Quizzes;
     const quize = Quizzes[questionId - 1];
 
     if (theme) {
