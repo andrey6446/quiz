@@ -4,7 +4,7 @@
 module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.bulkInsert('Quizzes', [{
-      question: 'John Doe 1',
+      question: 'Johnn Doe 1',
       answer: 'false',
       image: 's',
       themeId: 1,
