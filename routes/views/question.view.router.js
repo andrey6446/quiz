@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Theme, Quiz } = require('../../db/models');
 const QuestionPage = require('../../components/QuestionPage');
 
-router.get('/:themeId/questions/:questionId', async (req, res) => {
+router.get('/:themeId/questions/:questionId/a', async (req, res) => {
   try {
     const { themeId, questionId } = req.params;
 

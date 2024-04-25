@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { Theme, Quiz } = require('../../db/models');
 
-router.post('/:themeId/questions/:questionId', async (req, res) => {
+router.post('/:themeId/questions/:questionId/a', async (req, res) => {
   try {
     const { themeId, questionId } = req.params;
     const { answer } = req.body;
