@@ -14,6 +14,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 app.use(removeHeaders);
 app.use(ssr);
+app.use(express.json());
 app.use('/', indexRouter);
 
 app.listen(PORT, () => { console.log('Server started'); });
