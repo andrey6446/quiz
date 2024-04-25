@@ -1,10 +1,19 @@
+/* eslint-disable import/no-extraneous-dependencies */
 require('@babel/register');
 
 const express = require('express');
-const ssr = require('./middleware/ssr')
-const removeHeaders = require('./middleware/removeHeaders')
+const path = require('path');
+const ssr = require('./middleware/ssr');
+const removeHeaders = require('./middleware/removeHeaders');
+const indexRouter = require('./routes/index.router');
 
 const app = express();
-app.use(ssr)
-app.use(removeHeaders)
-app.listen(3000, () => { console.log('Server started'); });
+const PORT = 3000;
+
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.urlencoded({ extended: true }));
+app.use(removeHeaders);
+app.use(ssr);
+app.use('/', indexRouter);
+
+app.listen(PORT, () => { console.log('Server started'); });
