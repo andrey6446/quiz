@@ -8,7 +8,9 @@ function ThemeCard({ theme }) {
       </div>
       <p>{theme.name}</p>
       <button>
-        <a href={`/themes/${theme.id}/questions/1/a`}>Начать</a>
+        <a href={`/themes/${theme.id}/questions/1/a`}>
+          <p>Начать квиз</p>
+        </a>
       </button>
     </div>
   );
