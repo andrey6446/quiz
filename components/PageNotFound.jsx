@@ -4,8 +4,11 @@ const Layout = require('./Layout');
 function PageNotFound({ title }) {
   return (
     <Layout title={title}>
-      <h1>PageNotFound</h1>
-      <p>404</p>
+      <div className="not">
+        <h1>PageNotFound</h1>
+        <p>404</p>
+      </div>
+      <img src="/image/gypno.gif" alt="404" className='notGif'/>
     </Layout>
   );
 }
