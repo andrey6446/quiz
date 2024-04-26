@@ -81,7 +81,7 @@ button:active {
 }
 
 hr {
-  margin: 20px auto 10px;
+  margin: -10px auto 0;
   padding: 0;
   height: 50px;
   border: none;
@@ -141,11 +141,9 @@ hr {
   height: 60vh;
   width: 70vw;
   margin: 0 auto;
-
   border-radius: 5px;
   border: 1px solid #eeeeee80;
   box-shadow: 0 18px 40px -12px #a09f9f80;
-
   padding: 30px 50px;
 }
 
@@ -161,8 +159,8 @@ hr {
 }
 
 .themeImg {
-  max-width: 400px;
-  height: 255px;
+  max-width: 500px;
+  height: 320px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -173,7 +171,7 @@ hr {
 
 .themeImg img {
   display: block;
-  max-width: 455px;
+  max-width: 570px;
   height: auto;
 
   object-position: center;
@@ -198,14 +196,14 @@ hr {
 }
 
 .questionImg {
-  width: 500px;
+  width: 800px;
 
   overflow: hidden;
 }
 
 .questionImg img {
-  width: 500px;
-  max-height: 450px;
+  width: 800px;
+  max-height: 750px;
   border-radius: 5px;
 
   object-position: center;
@@ -241,7 +239,6 @@ hr {
   box-shadow: 0 20px 20px -20px #c4a339a8;
 }
 
-
 .regForm {
   display: flex;
   flex-direction: column;
@@ -272,10 +269,11 @@ hr {
 
 .navBar p {
   font-size: 30px;
-  padding-top: 5px;
+  padding-top: 40px;
+  vertical-align: middle;
   align-self: center;
   margin-right: 50px;
-
+}
 .not {
   margin-top: 200px;
   font-size: 60px;
@@ -303,5 +301,4 @@ hr {
   to {
     background-position: 200% center;
   }
-
 }

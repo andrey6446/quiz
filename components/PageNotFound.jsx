@@ -8,7 +8,7 @@ function PageNotFound({ title }) {
         <h1>PageNotFound</h1>
         <p>404</p>
       </div>
-      <img src="/image/gypno.gif" alt="404" className='notGif'/>
+      <img src="/image/gypno.gif" alt="404" className="notGif" />
     </Layout>
   );
 }
