@@ -12,9 +12,16 @@ router.get('/:themeId/questions/:questionId/a', async (req, res) => {
     const quize = Quizzes[questionId - 1];
 
     if (theme) {
-      res.status(200).send(res.renderComponent(QuestionPage, {
-        questionId, themeId, name, length, quize, title: 'Самый лучший квиз!',
-      }));
+      res.status(200).send(
+        res.renderComponent(QuestionPage, {
+          questionId,
+          themeId,
+          name,
+          length,
+          quize,
+          title: 'Самый лучший квиз!',
+        }),
+      );
     }
   } catch ({ message }) {
     res.status(500).json({ error: message });

@@ -19,6 +19,8 @@ if (form) {
         form.insertAdjacentHTML('beforeend', data.html);
         form.removeChild(btnSend);
       }
-    } else { alert('Поле ответа не может быть пустым!'); }
+    } else {
+      alert('Поле ответа не может быть пустым!');
+    }
   });
 }

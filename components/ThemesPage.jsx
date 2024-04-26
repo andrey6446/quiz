@@ -1,6 +1,6 @@
-const React = require("react");
-const Layout = require("./Layout");
-const ThemeCard = require("./ThemeCard");
+const React = require('react');
+const Layout = require('./Layout');
+const ThemeCard = require('./ThemeCard');
 
 function ThemesPage({ title, themes }) {
   return (
