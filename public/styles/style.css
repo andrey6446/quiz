@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  max-width: 80vw;
+  margin: 0 auto;
+  max-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  width: 223px;
+  height: 64px;
+  margin: auto 0;
+  color: #fff;
+}
+
+a:hover {
+  color: #fcc822;
+}
+
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+a p {
+  line-height: 64px;
+}
+
+.question > p {
+  font-size: 36px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 223px;
+  height: 64px;
+  box-shadow: 0 18px 40px -12px #fbe18f;
+  border-radius: 5px;
+  font-size: 24px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background: #fcc822;
+  background: linear-gradient(135deg);
+
+  transition: all 0.5s;
+}
+
+button:hover {
+  scale: 1.1;
+  background: #fff;
+  border: 1px solid #fcc822;
+  color: #fcc822;
+}
+
+button:active {
+  scale: 1;
+}
+
+.logo,
+.aLogo {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+}
+
+hr {
+  margin: -10px auto 0;
+  padding: 0;
+  height: 50px;
+  border: none;
+  border-bottom: 3px solid #fcc822;
+  box-shadow: 0 20px 20px -20px #333;
+  width: 95%;
+}
+
+.btn-start {
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-start a {
+  width: 400px;
+  font-size: 35px;
+}
+
+.mainPage {
+  margin-top: 160px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img-bg-1 {
+  width: 50%;
+}
+
+.main-description {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.themeStart {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 55px;
+  margin-bottom: 20px;
+  font-size: 50px;
+  color: #fcc822;
+  font-weight: 600;
+}
+
+.themeStart img {
+  max-width: 100px;
+  margin-left: 150px;
+}
+
+.themes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60vh;
+  width: 70vw;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid #eeeeee80;
+  box-shadow: 0 18px 40px -12px #a09f9f80;
+  padding: 30px 50px;
+}
+
+.themeCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.themeCard:hover .themeImg img {
+  transform: scale(0.95);
+}
+
+.themeImg {
+  max-width: 500px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.themeImg img {
+  display: block;
+  max-width: 570px;
+  height: auto;
+
+  object-position: center;
+  object-fit: contain;
+  transition: all 0.5s;
+}
+
+.questionHeader {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 50px;
+  color: #fcc822;
+  font-weight: 600;
+  text-align: center;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.questionImg {
+  width: 800px;
+
+  overflow: hidden;
+}
+
+.questionImg img {
+  width: 800px;
+  max-height: 750px;
+  border-radius: 5px;
+
+  object-position: center;
+  object-fit: fill;
+}
+
+.questionForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+
+  align-items: center;
+}
+
+.questionForm form {
+  display: flex;
+  gap: 15px;
+}
+
+.questionForm form input {
+  width: 500px;
+  height: 64px;
+  border: 1px solid #fcc822;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+.questionForm form input:focus,
+.questionForm form input:checked {
+  outline: none;
+  border: 2px solid #fcc822;
+  box-shadow: 0 20px 20px -20px #c4a339a8;
+}
+
+.regForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.regForm input {
+  width: 300px;
+  height: 64px;
+  border: 1px solid #fcc822;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+.regForm input:focus,
+.regForm form input:checked {
+  outline: none;
+  border: 2px solid #fcc822;
+  box-shadow: 0 20px 20px -20px #c4a339a8;
+}
+
+.navBar {
+  display: flex;
+  color: #fcc822;
+}
+
+.navBar p {
+  font-size: 30px;
+  padding-top: 40px;
+  vertical-align: middle;
+  align-self: center;
+  margin-right: 50px;
+}
+.not {
+  margin-top: 200px;
+  font-size: 60px;
+  text-align: center;
+  background: linear-gradient(90deg, #e933ff, #ffb400, #ff3333, #334dff, #e933ff);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: not 5s linear infinite;
+}
+
+.notGif {
+  display: block;
+  scale: 1.7;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes not {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: 200% center;
+  }
+}
