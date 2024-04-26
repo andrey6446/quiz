@@ -13,16 +13,42 @@ body {
   font-weight: 500;
   font-style: normal;
   font-size: 20px;
+  max-width: 80vw;
+  margin: 0 auto;
+  max-height: 100vh;
 }
 
 a {
   text-decoration: none;
+  display: block;
+  width: 123px;
+  height: 64px;
+  margin: auto 0;
+  color: #fff;
+}
+
+a:hover {
+  color: #fcc822;
+}
+
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+a p {
+  line-height: 64px;
+  font-size: 40px;
 }
 
 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 123px;
   height: 64px;
   box-shadow: 0 18px 40px -12px #fbe18f;
+  border-radius: 5px;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -39,4 +65,48 @@ button:hover {
 
 button:active {
   scale: 1;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+}
+
+hr {
+  margin: -30px auto 10px;
+  padding: 0;
+  height: 50px;
+  border: none;
+  border-bottom: 3px solid #fcc822;
+  box-shadow: 0 20px 20px -20px #333;
+  width: 95%;
+}
+
+.btn-start {
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-start a {
+  width: 400px;
+}
+
+.mainPage {
+  margin-top: 160px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img-bg-1 {
+  width: 50%;
+}
+
+.main-description {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
