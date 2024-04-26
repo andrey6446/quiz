@@ -5,7 +5,11 @@ function ThemeCard({ theme }) {
     <div className="themeCard">
       <img src={theme.image} alt="Theme img" />
       <p>{theme.name}</p>
-      <button><a href={`/themes/${theme.id}/questions/1/a`}>Начать</a></button>
+      <button>
+        <a href={`/themes/${theme.id}/questions/1/a`}>
+          <p>Начать квиз</p>
+        </a>
+      </button>
     </div>
   );
 }

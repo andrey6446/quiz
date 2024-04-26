@@ -4,10 +4,11 @@ const Layout = require('./Layout');
 function MainPage({ title }) {
   return (
     <Layout title={title}>
-      
-      <a href="/themes">
-        <button>Начать играть</button>
-      </a>
+      <button>
+        <a href="/themes">
+          <p>Начать игру</p>
+        </a>
+      </button>
     </Layout>
   );
 }

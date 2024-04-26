@@ -17,12 +17,31 @@ body {
 
 a {
   text-decoration: none;
+  width: 123px;
+  height: 64px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+}
+
+a:hover {
+  color: #fcc822;
+}
+
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+a p {
+  padding-top: 18%;
 }
 
 button {
   width: 123px;
   height: 64px;
   box-shadow: 0 18px 40px -12px #fbe18f;
+  border-radius: 5px;
   border: none;
   color: #fff;
   cursor: pointer;
