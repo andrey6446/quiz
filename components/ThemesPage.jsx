@@ -8,7 +8,7 @@ function ThemesPage({ title, themes, score }) {
       <div className="themeStart">
         <p>Выберите тему</p>
         <p>
-          Ваши баллы:
+          Твои баллы:
           {score}
         </p>
         <img src="/image/hat.svg" alt="Hat" />
