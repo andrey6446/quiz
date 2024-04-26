@@ -1,5 +1,5 @@
-const React = require('react');
-const Layout = require('./Layout');
+const React = require("react");
+const Layout = require("./Layout");
 
 function QuestionPage({ title, themeId, name, quize, questionId, length }) {
   return (
@@ -24,6 +24,7 @@ function QuestionPage({ title, themeId, name, quize, questionId, length }) {
           </a>
         </button>
       )}
+
     </Layout>
   );
 }
