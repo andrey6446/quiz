@@ -1,9 +1,9 @@
 const React = require('react');
 const Layout = require('./Layout');
 
-function QuestionPage({ title, themeId, name, quize, questionId, length, score }) {
+function QuestionPage({ title, themeId, name, quize, questionId, length, score, user }) {
   return (
-    <Layout title={title}>
+    <Layout title={title} user={user}>
       <h1 className="questionHeader">{name}</h1>
       <div className="question">
         <div className="questionImg">

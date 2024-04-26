@@ -1,5 +1,5 @@
-const React = require('react');
-const Layout = require('./Layout');
+const React = require("react");
+const Layout = require("./Layout");
 
 function MainPage({ title }) {
   return (
@@ -10,8 +10,8 @@ function MainPage({ title }) {
           <h1>Поднатужились</h1>
           <h2>Андрей и Катя</h2>
           <button className="btn-start">
-            <a href="/themes">
-              <p>Начать игру</p>
+            <a href="/auth/registration">
+              <p>Зарегистрироваться</p>
             </a>
           </button>
         </div>

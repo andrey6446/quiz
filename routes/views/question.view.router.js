@@ -5,6 +5,7 @@ const QuestionPage = require('../../components/QuestionPage');
 router.get('/:themeId/questions/:questionId/a', async (req, res) => {
   try {
     const { themeId, questionId } = req.params;
+    const { user } = res.app.locals;
 
     const theme = await Theme.findOne({ where: { id: themeId }, include: Quiz });
     const { name, Quizzes } = theme;
@@ -19,6 +20,7 @@ router.get('/:themeId/questions/:questionId/a', async (req, res) => {
           name,
           length,
           quize,
+          user,
           title: 'Самый лучший квиз!',
         }),
       );

@@ -9,8 +9,9 @@ router.get('/', async (req, res) => {
   const { score } = res.app.locals;
   try {
     const themes = await Theme.findAll();
+    const { user } = res.app.locals;
     if (themes) {
-      res.status(200).send(res.renderComponent(ThemePage, { score, themes, title: 'Самый лучший квиз!' }));
+      res.status(200).send(res.renderComponent(ThemePage, { score, themes, user, title: 'Самый лучший квиз!' }));
     }
   } catch ({ message }) {
     res.status(500).json({ error: message });
