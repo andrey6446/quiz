@@ -1,7 +1,7 @@
-const React = require("react");
-const Layout = require("./Layout");
+const React = require('react');
+const Layout = require('./Layout');
 
-function QuestionPage({ title, themeId, name, quize, questionId, length }) {
+function QuestionPage({ title, themeId, name, quize, questionId, length, score }) {
   return (
     <Layout title={title}>
       <h1 className="questionHeader">{name}</h1>
