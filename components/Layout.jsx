@@ -5,6 +5,7 @@ function Layout({ title, children }) {
     <html lang="ru">
       <head>
         <title>{title}</title>
+
         <link rel="stylesheet" href="/styles/style.css" />
         <script defer src="/scripts/script.js" />
       </head>

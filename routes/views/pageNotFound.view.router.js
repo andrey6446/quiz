@@ -7,7 +7,6 @@ router.get('*', (req, res) => {
   } catch ({ message }) {
     res.status(500).json({ error: message });
   }
-
-})
+});
 
 module.exports = router;
