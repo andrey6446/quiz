@@ -1,10 +1,10 @@
-const React = require('react');
-const Layout = require('./Layout');
-const ThemeCard = require('./ThemeCard');
+const React = require("react");
+const Layout = require("./Layout");
+const ThemeCard = require("./ThemeCard");
 
-function ThemesPage({ title, themes }) {
+function ThemesPage({ title, themes, user }) {
   return (
-    <Layout title={title}>
+    <Layout title={title} user={user}>
       <div className="themeStart">
         <p>Выберите тему</p>
         <img src="/image/hat.svg" alt="Hat" />

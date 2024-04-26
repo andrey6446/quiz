@@ -93,7 +93,7 @@ hr {
 
 .btn-start a {
   width: 400px;
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .mainPage {
@@ -235,4 +235,39 @@ hr {
   outline: none;
   border: 2px solid #fcc822;
   box-shadow: 0 20px 20px -20px #c4a339a8;
+}
+
+.regForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.regForm input {
+  width: 300px;
+  height: 64px;
+  border: 1px solid #fcc822;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+.regForm input:focus,
+.regForm form input:checked {
+  outline: none;
+  border: 2px solid #fcc822;
+  box-shadow: 0 20px 20px -20px #c4a339a8;
+}
+
+.navBar {
+  display: flex;
+  color: #fcc822;
+}
+
+.navBar p {
+  font-size: 30px;
+  padding-top: 5px;
+  align-self: center;
+  margin-right: 50px;
 }

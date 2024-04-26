@@ -1,12 +1,15 @@
-const React = require('react');
+const React = require("react");
 
-function Layout() {
+function NavBar({ user }) {
   return (
     <>
-      <img src="/image/logo.svg" alt="logo" className="logo" />
+      <div className="navBar">
+        <img src="/image/logo.svg" alt="logo" className="logo" />
+        {user ? <p>Привет, {user}!</p> : <></>}
+      </div>
       <hr />
     </>
   );
 }
 
-module.exports = Layout;
+module.exports = NavBar;
